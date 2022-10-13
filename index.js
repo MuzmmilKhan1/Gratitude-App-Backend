@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT || 8000
 
 // Mongoose Connection
-mongoose.connect("mongodb+srv://MuzamilKhan:ms391retwq@gratitude-app.8l5gq9j.mongodb.net/gratitude")
+mongoose.connect(process.env.Mongo_Key)
 
 const gratitude = mongoose.Schema
 const MyModel = mongoose.model('gratitude', new gratitude({ 
