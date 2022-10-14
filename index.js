@@ -17,7 +17,7 @@ const MyModel = mongoose.model('gratitude', new gratitude({
  
 // Cors and Body Parser for Getting His typed project
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://gratitude-app-by-muzamil.web.app/',
     credentials: true
 }));
 app.use(bodyParser.urlencoded({ extended: true })); 
