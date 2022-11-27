@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT || 8000
 
 // Mongoose Connection
-mongoose.connect(process.env.MonogoKey)
+mongoose.connect('mongodb+srv://MuzamilKhan:ms391retwq@gratitude-app.8l5gq9j.mongodb.net/gratitude')
 
 const gratitude = mongoose.Schema
 const MyModel = mongoose.model('gratitude', new gratitude({ 
@@ -17,7 +17,7 @@ const MyModel = mongoose.model('gratitude', new gratitude({
  
 // Cors and Body Parser for Getting His typed project
 app.use(cors({
-    origin: 'https://gratitude-app-by-muzamil.web.app',
+    origin: 'https://gratitude-app-e1ca6.web.app',
     credentials: true
 }));
 app.use(bodyParser.urlencoded({ extended: true })); 
